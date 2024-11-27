@@ -1,74 +1,56 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# Role-Based Access Control (RBAC) User Interface
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project implements a **Role-Based Access Control (RBAC)** user interface for managing users, roles, and permissions. The purpose of the system is to allow administrators to assign roles, define permissions, and manage user access efficiently. The application is designed to be secure, user-friendly, and flexible for different use cases.
 
-In the project directory, you can run:
+### Features
 
-### `npm start`
+- **User Management**: View, add, edit, delete, and assign roles to users.
+- **Role Management**: Create, edit, and delete roles with configurable permissions.
+- **Dynamic Permissions**: Assign and modify permissions for roles dynamically.
+- **API Simulation**: Simulate API calls to handle CRUD operations for users and roles.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- **Frontend**: React.js
+- **CSS**: Custom styling
+- **State Management**: React hooks (`useState`, `useEffect`)
+- **API Simulation**: Mocked API for CRUD operations on users and roles
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 1. **User Management**
+- View and manage a list of users.
+- Add, edit, and delete users.
+- Assign roles to users.
+- Toggle user status (Active/Inactive).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2. **Role Management**
+- Define and edit roles.
+- Assign permissions to roles (e.g., Read, Write, Delete).
+- Assign and modify roles dynamically.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 3. **Dynamic Permission Management**
+- Assign and modify permissions for roles.
+- Clear display of permissions for easy management.
 
-### `npm run eject`
+### 4. **API Simulation (Optional)**
+- Mock API calls to simulate server responses for CRUD operations.
+- This feature helps test the UI without connecting to an actual backend.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Setup Instructions
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To run the project locally, follow these steps:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 1. Clone the repository
 
-## Learn More
+```bash
+git clone https://github.com/SaiSathwik012/RoleManagementApp.git
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# RoleManagementApp
->>>>>>> 97d28d6394ca4b11e208511cd2d759f51bf74b2e
