@@ -58,7 +58,12 @@ const App = () => {
                     />
                     <Route
                         path="roles"
-                        element={<RoleManagement roles={roles} handleAddRole={handleAddRole} />}
+                        element={<RoleManagement 
+                            users={users}
+                            roles={roles}
+                            setRoles={setRoles}
+                            setUsers={setUsers}
+                            />}
                     />
                 </Route>
             </Routes>

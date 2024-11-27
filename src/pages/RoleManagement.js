@@ -1,30 +1,26 @@
 import React, { useState, useCallback } from 'react';
 import '../styles/RoleManagement.css';
 
-const RoleManagement = () => {
-    const [roles, setRoles] = useState([
-        { id: 1, name: 'Admin', permissions: ['Read', 'Write', 'Delete'] },
-        { id: 2, name: 'Editor', permissions: ['Read', 'Write'] },
-        { id: 3, name: 'Viewer', permissions: ['Read'] },
-    ]);
+const RoleManagement = ({users, roles, setRoles, setUsers}) => {
 
-    const [users, setUsers] = useState([
-        { id: 1, name: 'John Doe', role: 'Admin' },
-        { id: 2, name: 'Jane Smith', role: 'Editor' },
-    ]);
 
     const [newRole, setNewRole] = useState({ name: '', permissions: [] });
     const [editingRoleId, setEditingRoleId] = useState(null);
     const [selectedUserId, setSelectedUserId] = useState(null);
     const [userRole, setUserRole] = useState("");
     const availablePermissions = ['Read', 'Write', 'Delete'];
-    const handleAssignRoleToUser = useCallback((userId, role) => {
+    const handleAssignRoleToUser = ((userId, role) => {
+        console.log(userId);
+        console.log(role);
         setUsers((prev) =>
             prev.map((user) =>
-                user.id === userId ? { ...user, role } : user
-            )
+                user.id === parseInt(userId) ? { ...user, role: role } : user
+            )            
         );
-    }, []);
+        setSelectedUserId(null);
+        alert("Role Updated successfully")
+        console.log(users);
+    });
 
     const hasPermission = (userRole, permission) => {
         const role = roles.find((r) => r.name === userRole);
@@ -105,14 +101,14 @@ const RoleManagement = () => {
                             onChange={(e) => {
                                 const selectedRole = e.target.value;
                                 setUserRole(selectedRole);
-                                handleAssignRoleToUser(selectedUserId, selectedRole);
                             }}
                             value={userRole}
                         >
-                            <option value="Admin">Admin</option>
-                            <option value="Editor">Editor</option>
-                            <option value="Viewer">Viewer</option>
+                            {roles.map((role) => (
+                                <option key={role.id} value={role.name}>{role.name}</option>
+                            ))}
                         </select>
+                        <button onClick={()=>handleAssignRoleToUser(selectedUserId, userRole)}> Update </button>
                     </div>
                 )}
             </div>
