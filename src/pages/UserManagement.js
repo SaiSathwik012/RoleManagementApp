@@ -80,6 +80,7 @@ const UserManagement = ({ users, roles, handleAddUser, handleEditUser, handleDel
                     placeholder="Name"
                     value={newUser.name}
                     onChange={handleInputChange}
+                    id='name'
                 />
                 <input
                     type="email"
@@ -87,21 +88,22 @@ const UserManagement = ({ users, roles, handleAddUser, handleEditUser, handleDel
                     placeholder="Email"
                     value={newUser.email}
                     onChange={handleInputChange}
+                    id='email'
                 />
-                <select name="role" value={newUser.role} onChange={handleInputChange}>
-                    <option value="">Select Role</option>
+                <select  id='role' name="role" value={newUser.role} onChange={handleInputChange}>
+                    <option value="">Select Role</option> 
                     {roles.map((role) => (
                         <option key={role.id} value={role.name}>
                             {role.name}
                         </option>
                     ))}
                 </select>
-                <select name="status" value={newUser.status} onChange={handleInputChange}>
+                <select id='status' name="status" value={newUser.status} onChange={handleInputChange}>
                     <option value="">Select Status</option>
                     <option value="Active">Active</option>
                     <option value="Inactive">Inactive</option>
                 </select>
-                <button onClick={handleAddOrEditUser}>{isEditing ? 'Update User' : 'Add User'}</button>
+                <button id="submit" onClick={handleAddOrEditUser}>{isEditing ? 'Update User' : 'Add User'}</button>
             </div>
 
             <div className="user-list">

@@ -25,6 +25,7 @@ const RoleManagement = () => {
             )
         );
     }, []);
+
     const hasPermission = (userRole, permission) => {
         const role = roles.find((r) => r.name === userRole);
         return role && role.permissions.includes(permission);
@@ -83,6 +84,7 @@ const RoleManagement = () => {
     return (
         <div className="role-management">
             <h1>Role Management</h1>
+
             <div className="user-role-assignment">
                 <h2>Assign Role to User</h2>
                 <select
