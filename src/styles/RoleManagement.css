@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f1f5f9;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.role-management {
+    width: 85%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.user-role-assignment {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.user-role-assignment:hover {
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+}
+
+.user-role-assignment h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.user-role-assignment select,
+.user-role-assignment button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    color: #555;
+    cursor: pointer;
+}
+
+.user-role-assignment select {
+    margin-bottom: 20px;
+}
+
+.user-role-assignment button {
+    background-color: #4CAF50;
+    color: #fff;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.user-role-assignment button:hover {
+    background-color: #45a049;
+}
+
+.add-role {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.add-role:hover {
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+}
+
+.add-role h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.add-role input[type="text"],
+.add-role input[type="checkbox"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    color: #555;
+    font-size: 1rem;
+}
+
+.add-role input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.add-role button {
+    margin: 2px;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-role button:hover {
+    background-color: #45a049;
+}
+
+.role-list {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.role-list h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.role-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.role-list th,
+.role-list td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.role-list th {
+    background-color: #f4f4f9;
+    color: #333;
+    font-weight: 600;
+}
+
+.role-list td {
+    background-color: #fafafa;
+}
+
+.role-list tr:hover {
+    background-color: #f1f1f1;
+}
+
+.role-list button {
+    margin: 2px;
+    padding: 6px 12px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.role-list button:hover {
+    background-color: #e53935;
+}
+
+.access-content {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.access-content h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.access-content div {
+    margin-bottom: 20px;
+}
+
+.access-content button {
+    margin: 2px;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.access-content button:hover {
+    background-color: #45a049;
+}
+
+.access-content button[disabled] {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+}
+
+.access-content button[disabled]:hover {
+    background-color: #e0e0e0;
+}
